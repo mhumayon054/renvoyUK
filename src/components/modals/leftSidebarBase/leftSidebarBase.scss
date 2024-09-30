@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css");
+$main: #2181fa;
+$border-light: #cccccc;
+$primary: #4286f5;
+$white: #fff;
+$bg-light: #fbfbfb;
+$lightgray: #f0f0f0;
+$black: #202223;
+$box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+$border: #8c9196;
+$border-light: #cccccc;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+small {
+  font-family: Poppins !important;
+}
+
+p,
+span,
+a,
+.nav-link,
+.nav-item,
+.navbar-nav,
+input {
+  font-family: Poppins !important;
+}
+
+input,
+textarea,
+button,
+.btn {
+  outline: 2px solid transparent !important;
+  box-shadow: none !important;
+  color:black;
+}
+
+html {
+  --scrollbarBG: #cfd8dc;
+  --thumbBG: #90a4ae;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  // background: $main;
+}
+
+html,
+body {
+  transition: all ease-in-out 0.4s;
+  scroll-behavior: smooth;
+}
+
+.lg-container {
+  // padding: 0px 100px !important;
+  max-width: 1400px;
+  margin: auto;
+}
+
+body {
+  font-family: Poppins !important;
+  overflow-x: hidden;
+}
+
+.animatedup {
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+
+.nav-item {
+  width:14%;
+  height: 51px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin: 15px 0px 0px 0px;
+}
+
+.name {
+  // margin-left: 57px !important;
+
+}
+
+.nav-link {
+  margin-bottom: 20px;
+  cursor: pointer;
+  height: 50px;
+  width: 100%;
+  background: white;
+  padding: 0px 15px;
+  border-radius: 8px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+
+  .fa-box {
+    margin-left: -19px;
+  }
+
+  .fa-image-user {
+    margin-left: -15px;
+  }
+
+  .fa-pen-to-square {
+    margin-left: -39px;
+  }
+
+  .fa-calendar {
+    margin-left: -24px;
+  }
+
+  .fa-credit-card {
+    margin-left: 5px;
+  }
+
+  .fa-chart-column {
+    margin-left: -3px;
+  }
+
+  h6 {
+    margin-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #8c96a0;
+
+  }
+
+  i {
+    font-size: 22px !important;
+    color: #8c96a0 !important;
+  }
+}
+
+.left-side-menu .offcanvas-body .nav-item svg {
+  color: #8c96a0;
+  margin-right: 10px;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.animatedleft {
+  animation: left-right 1s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes left-right {
+  0% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+.container-fluid {
+  overflow-x: hidden;
+  padding: 0px !important;
+}
+
+.container-full {
+  padding: 0px 70px;
+  width: 100%;
+}
+
+.left-side-menu {
+  top: 62px !important;
+  width: 200px !important;
+
+  .offcanvas-body {
+    .nav-item {
+      width: 100%;
+      height: 50px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      transition: all ease-in-out 0.2s;
+      display: flex;
+      padding: 0px 15px;
+      align-items: center;
+
+      h6 {
+        margin-top: 3px;
+        margin-bottom: 0px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #8c96a0;
+      }
+
+      svg {
+        color: #8c96a0;
+        margin-right: 10px;
+      }
+    }
+
+    .nav-item.active {
+      background: #edf4ff;
+
+      h6 {
+        color: $main;
+      }
+
+      svg {
+        color: $main;
+      }
+    }
+
+    // .nav-item:hover {
+    //   background: #edf4ff;
+
+    //   h6 {
+    //     color: $main;
+    //   }
+
+    //   svg {
+    //     color: $main;
+    //   }
+    // }
+  }
+}

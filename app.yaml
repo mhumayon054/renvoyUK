@@ -1,0 +1,38 @@
+runtime: nodejs16
+env: standard
+service: people
+
+default_expiration: "1m"
+resources:
+    cpu: 5
+    memory_gb: 2
+    disk_size_gb: 10
+
+handlers:
+  # Serve all static files with url ending with a file extension
+  
+  - url: /people/(.*\..+)$
+    static_files: build/\1
+    secure: always
+    upload: build/(.*\..+)$
+    expiration: "1m"
+   
+  # Catch all handler to index.html
+  - url: /people/.*
+    static_files: build/index.html
+    secure: always
+    upload: build/index.html
+    expiration: "1m"
+
+  - url: /(.*\..+)$
+    static_files: build/\1
+    secure: always
+    upload: build/(.*\..+)$
+    expiration: "1m"
+   
+  # Catch all handler to index.html
+  - url: /.*
+    static_files: build/index.html
+    secure: always
+    upload: build/index.html
+    expiration: "1m"

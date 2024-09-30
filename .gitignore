@@ -1,0 +1,20 @@
+# Ignore node_modules directory
+node_modules/
+yarn.lock
+
+# Ignore npm debug log
+npm-debug.log
+
+# Ignore .env files containing sensitive information
+
+
+# Ignore any built or compiled files
+build/
+dist/
+
+# Ignore log files
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db

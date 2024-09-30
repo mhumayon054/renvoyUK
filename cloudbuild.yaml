@@ -1,0 +1,14 @@
+steps:
+  # Install env-cmd globally
+  - name: "gcr.io/cloud-builders/npm:node-16.18.0"
+    args: ["install", "env-cmd", "--save-dev"]
+  # Install
+  - name: "gcr.io/cloud-builders/npm:node-16.18.0"
+    args: ["install", "--force"]
+  # Build
+  - name: "gcr.io/cloud-builders/npm:node-16.18.0"
+    args: ["run", "build:${_ENVIRONMENT}"]
+  # Deploy
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: ["app", "deploy"]
+timeout: "12600s"
