@@ -1,0 +1,182 @@
+.bg-image {
+    background-image: url(../images/Vector.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 157px 0;
+
+    .form-wrapper {
+        width: 575px;
+        border: 1px solid #F1F1F1;
+        border-radius: 24px;
+        padding: 60px;
+        margin: auto;
+        background-color: #F8F8F882;
+
+        .form-logo {
+            text-align: center;
+
+            img {
+                width: 276px;
+                height: 69px;
+                object-fit: cover;
+            }
+        }
+
+        .form-title {
+            margin: 24px 0px 0px;
+
+            p {
+                font-family: poppins;
+                font-weight: 400;
+                font-size: 34px;
+                line-height: 52px;
+                text-align: end;
+                margin: 0px;
+            }
+        }
+
+
+        .signup-fields {
+            margin: 36px 0px;
+            .field-wrapper {
+                background-color: white;
+                border: 1px solid #DCDEE3;
+                border-radius: 8px;
+                padding: 10px 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                margin-bottom: 14px;
+                cursor: pointer;
+
+
+                .field-logo {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                p {
+                    font-family: poppins;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #7F8493;
+
+                    margin: 0px;
+                }
+            }
+
+            .field-wrapper-1 {
+                background-color: white;
+                border: 1px solid #DCDEE3;
+                border-radius: 8px;
+                padding: 10px 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                cursor: pointer;
+
+
+                .field-logo {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                p {
+                    font-family: poppins;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin: 0px;
+                    color: #7F8493;
+                }
+            }
+        }
+
+        .signup-btn {
+            text-align: center;
+
+            p {
+                font-family: poppins;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                margin: 0px;
+
+                span {
+                    color: #0A8FEF;
+                    font-family: poppins;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+
+        }
+
+        .privacy-text{
+            margin: 36px 0px 18px 0px;
+            p{
+                font-family: poppins;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #7F8493;
+                margin: 0px;
+                span{
+                    color: #0A8FEF;
+                    font-family: poppins;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .btn-sec{
+            display: flex;
+                align-items: center;
+                gap: 10px;
+            button{
+                
+                border: none;
+                outline: none;
+                background: none;
+                color: #7F8493;
+                font-family: poppins;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+
+
+        //---------Login-Page-----------
+        // .heading-wrapper{
+        //     font-family: poppins;
+        //     font-weight: 500;
+        //     font-size: 34px;
+        //     line-height: 51px;
+        //     color: #002846;
+        //     text-align: center;
+        //     margin-bottom: 8px;
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
