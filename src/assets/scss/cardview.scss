@@ -1,0 +1,134 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // 3 columns
+  gap: 20px; // gap between the cards
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); // 2 columns on medium screens
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr; // 1 column on small screens
+  }
+}
+
+.grid-item {
+}
+.blockexmaple-button-wrapper{
+    padding-top: 15px;
+    .custom-button{
+    background: transparent;
+    color: #AEB2BC;
+    font-size: 14px;
+    border: 1px solid #AEB2BC;
+}
+}
+
+.card-component{
+        border-radius: 24px !important;
+        padding: 20px;
+        box-shadow: 0 4px 8px #0000001A;
+        .card-body{
+            padding: 0px;
+    .title-bar-wrapper{
+    
+    .title-bar{
+        display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #AEB2BC;
+    padding-bottom: 14px;
+    .title-bar-comp1{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        p{
+            font-size: 12px;
+            color: #002846;
+            font-weight: 500;
+            margin-bottom: 0px !important;
+    }
+}
+    .title-bar-comp2{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        button{
+        background-color: #EEFFE9;
+    border-radius: 6px;
+    border: none;
+    color: #57C200;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+    padding: 5px 14px;
+    }
+}
+}
+}
+        }
+.driver-bar{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    // justify-content: space-evenly;
+    .driver-text{
+        font-size: 12px;
+        font-weight: 500;
+        color: #002846;
+    }
+    .driver-data{
+        display: flex;
+        align-items: center;
+        p{
+            // margin-bottom: 0px !important;
+        }
+    }
+}
+.status-bar{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    .p1{
+        color:#002846;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .p2{
+        color:#002846;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+.map-img{
+    padding-top:15px ;
+}
+.rate-bar{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    .p1{
+        color:#002846;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .p2{
+        color:#002846;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+}
+#vector-line{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 169px;
+    height: 50px;
+    display: block;
+}
